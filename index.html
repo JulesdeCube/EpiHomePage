@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EpiHome</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: #f6f6f6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      margin: 0.25em;
+      display: block;
+      width: 5em;
+      height: 5em;
+      background-color: #fff;
+      font-size: 2em;
+      border-radius: 0.75em;
+    }
+    
+    .content h2 {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -100%);
+    }
+    .content img {
+      width: 100%;
+    }
+    #ACDC {
+      background-image: url(https://acdc.epita.fr/media/themes/img/favicon2021.png);
+      background-size: cover;
+    }
+    #CRI {
+      background-image: url(https://via.placeholder.com/150/2f6681/fff?text=CRI);
+      background-size: cover;
+    }
+    #outlook {
+      background-image: url(https://docs.microsoft.com/en-us/media/logos/logo-outlook.svg);
+      background-size: cover;
+      background-position: center;
+    }
+    #ichronos {
+      background-image: url(https://via.placeholder.com/150/555/fff?text=C);
+      background-size: cover;
+    }
+    #discord {
+      background-image: url(https://discordapp.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg);
+      background-size: cover;
+      background-position: center;
+    }
+    #whatsapp {
+      background-image: url(https://whatsappbrand.com/wp-content/themes/whatsapp-brc/images/WhatsApp_Logo_2.png);
+      background-size: cover;
+      background-position: center;
+    }
+    #pegaus {
+      background-image: url(https://prepa-epita.helvetius.net/pegasus/assets/images/pegasus/medium-logo-pegasus.png);
+      background-size: cover;
+      background-position: left;
+    }
+    
+    #ionisx {
+      background-image: url(https://pbs.twimg.com/profile_images/1178625629824176129/3dy8YE6__400x400.png);
+      background-size: cover;
+      background-position: center;
+    }
+    #reaseah {
+      font-size: 1.5em;
+      margin-bottom: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #reaseah input,
+    #reaseah button {
+      height: 2em;
+      font-size: 1em;
+      border-radius: 2em;
+      margin-left: 0.5em;
+    }
+    #reaseah input[type=text] {
+      padding-left: 1em;
+      padding-right: 1em;
+      border: solid 0.09em #d3d3d3;
+    }
+    #reaseah input[type=submit],
+    #reaseah button {
+      background: rgb(60, 130, 235);
+      color: white;
+      width: 2em;
+    }
+
+  </style>
+</head>
+<body>
+  <form id="reaseah" method="get" action="https://www.google.com/search">
+    <input type="text" name="q" size="31" value="">
+    <button class="material-icons">search</button>
+  </form>
+  <div class="container">
+    <a id="ACDC" class="content" href="https://acdc.epita.fr"></a>
+    <a id="ionisx" class="content" href="https://ionisx.com/courses/"></a>
+    <a id="ichronos" class="content" href="https://ichronos.net/INFOS1A2-2/#today"></a>
+    <a id="CRI" class="content" href="https://cri.epita.fr"></a>
+    <a id="pegaus" class="content" href="https://prepa-epita.helvetius.net/pegasus/"></a>
+    <a id="outlook" class="content" href="https://outlook.office.com/mail"></a>
+    <a id="discord" class="content" href="https://discordapp.com/channels/517081450491805710/538360163716038666"></a>
+    <a id="whatsapp" class="content" href="https://web.whatsapp.com/"></a>
+  </div>
+</body>
+</html>
