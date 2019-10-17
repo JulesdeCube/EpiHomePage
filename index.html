@@ -87,27 +87,27 @@
       background-size: cover;
       background-position: center;
     }
-    #reaseah {
+    #research {
       font-size: 1.5em;
       margin-bottom: 3em;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    #reaseah input,
-    #reaseah button {
+    #research input,
+    #research button {
       height: 2em;
       font-size: 1em;
       border-radius: 2em;
       margin-left: 0.5em;
     }
-    #reaseah input[type=text] {
+    #research input[type=text] {
       padding-left: 1em;
       padding-right: 1em;
       border: solid 0.09em #d3d3d3;
     }
-    #reaseah input[type=submit],
-    #reaseah button {
+    #research input[type=submit],
+    #research button {
       background: rgb(60, 130, 235);
       color: white;
       width: 2em;
@@ -116,8 +116,8 @@
   </style>
 </head>
 <body>
-  <form id="reaseah" method="get" action="https://www.google.com/search">
-    <input type="text" name="q" size="31" value="">
+  <form id="research" method="get" action="https://www.google.com/search">
+    <input id= "search-bar" type="text" name="q" size="31" value="">
     <button class="material-icons">search</button>
   </form>
   <div class="container">
@@ -131,4 +131,7 @@
     <a id="whatsapp" class="content" href="https://web.whatsapp.com/"></a>
   </div>
 </body>
+<script>
+  document.getElementById("search-bar").focus();
+</script>
 </html>
